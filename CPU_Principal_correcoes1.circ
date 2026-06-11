@@ -318,6 +318,8 @@
     <wire from="(1180,50)" to="(1180,210)"/>
     <wire from="(140,530)" to="(170,530)"/>
     <wire from="(140,670)" to="(180,670)"/>
+    <wire from="(170,20)" to="(170,530)"/>
+    <wire from="(170,20)" to="(940,20)"/>
     <wire from="(170,530)" to="(170,650)"/>
     <wire from="(170,530)" to="(560,530)"/>
     <wire from="(170,650)" to="(180,650)"/>
@@ -392,6 +394,8 @@
     <wire from="(880,410)" to="(1140,410)"/>
     <wire from="(920,120)" to="(920,230)"/>
     <wire from="(920,230)" to="(960,230)"/>
+    <wire from="(940,20)" to="(940,270)"/>
+    <wire from="(940,270)" to="(960,270)"/>
   </circuit>
   <circuit name="Unidade_de_Controle">
     <a name="appearance" val="logisim_evolution"/>
@@ -465,6 +469,9 @@
     <a name="circuit" val="Memorias_IR_Murilo"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(190,330)" name="Clock">
+      <a name="appearance" val="NewPins"/>
+    </comp>
     <comp lib="0" loc="(260,450)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Data_Address"/>
@@ -478,6 +485,9 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="Data_Write"/>
       <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(260,590)" name="Pin">
+      <a name="appearance" val="classic"/>
     </comp>
     <comp lib="0" loc="(430,480)" name="Power"/>
     <comp lib="0" loc="(880,530)" name="Pin">
@@ -499,12 +509,11 @@
     <comp lib="9" loc="(480,400)" name="Text">
       <a name="text" val="MEMORIA DE DADOS 32 x 16"/>
     </comp>
-    <comp loc="(710,140)" name="clock_marcelo"/>
     <wire from="(260,450)" to="(480,450)"/>
     <wire from="(260,490)" to="(480,490)"/>
     <wire from="(260,530)" to="(480,530)"/>
-    <wire from="(300,140)" to="(300,510)"/>
-    <wire from="(300,140)" to="(490,140)"/>
+    <wire from="(260,590)" to="(300,590)"/>
+    <wire from="(300,510)" to="(300,590)"/>
     <wire from="(300,510)" to="(480,510)"/>
     <wire from="(430,480)" to="(430,500)"/>
     <wire from="(430,500)" to="(480,500)"/>
@@ -528,7 +537,7 @@
     <comp lib="0" loc="(1020,110)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="RS1"/>
+      <a name="label" val="RS2"/>
       <a name="labelloc" val="north"/>
       <a name="type" val="output"/>
       <a name="width" val="2"/>
@@ -536,7 +545,7 @@
     <comp lib="0" loc="(1020,80)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="RS2"/>
+      <a name="label" val="RS1"/>
       <a name="labelloc" val="north"/>
       <a name="type" val="output"/>
       <a name="width" val="2"/>
@@ -624,8 +633,8 @@
       <a name="trigger" val="falling"/>
       <a name="width" val="16"/>
     </comp>
-    <wire from="(1010,110)" to="(1010,160)"/>
-    <wire from="(1010,110)" to="(1020,110)"/>
+    <wire from="(1000,110)" to="(1000,160)"/>
+    <wire from="(1000,110)" to="(1020,110)"/>
     <wire from="(1020,140)" to="(1020,170)"/>
     <wire from="(1020,140)" to="(1030,140)"/>
     <wire from="(1030,170)" to="(1030,180)"/>
@@ -671,7 +680,7 @@
     <wire from="(830,190)" to="(870,190)"/>
     <wire from="(890,140)" to="(980,140)"/>
     <wire from="(890,150)" to="(990,150)"/>
-    <wire from="(890,160)" to="(1010,160)"/>
+    <wire from="(890,160)" to="(1000,160)"/>
     <wire from="(890,170)" to="(1020,170)"/>
     <wire from="(890,180)" to="(1030,180)"/>
     <wire from="(980,50)" to="(1010,50)"/>
